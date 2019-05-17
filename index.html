@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Flipclock</title>
+   <!-- Flipclock -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.7/css/mdb.min.css" rel="stylesheet">
+  <!-- css -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  
+  
+       <!--start fanshawe logo area-->
+    <div class="container-fluid"> <center>
+       
+        <a class="waves-effect wow fadeIn" href="#">
+            <img style="width:100%; margin-top:15%;" src="images/Fanshawe-TransparentHorizontal-FullColour.png">
+          </a>
+</center>
+      </div>
+   
+      <!-- Old Audio files-->
+	<!-- 
+		 <audio id="audiotag1" src="buzzer.mp3" ></audio>
+		 <audio id="audiotag2" src="europe.mp3" ></audio>
+		-->
+  
+  <!--start main clock area-->
+  <main>
+    <div class="container-fluid main-content py-4 pt-4 wow fadeIn mt-5">
+
+<div class="row-fluid  wow fadeIn">
+    <div class="your-clock"></div>
+</div>
+
+    </div>
+  </main>
+ 
+
+
+  <!--controls area-->
+  <footer class="page-footer text-center wow fadeIn>
+    <section class="footer-copyright py-3" style="background-color:#ffffff;">
+        <i class="start btn fa fa-play-circle"></i>
+   
+        <i class="reset btn fa fa-repeat fa-5x"></i><br/>
+    </div>
+  </footer>
+  
+
+
+<!-- SCRIPTS -->
+<!-- Old sound script -->
+<!-- 
+
+	<script type="text/javascript">
+			var clock;
+
+			$(document).ready(function() {
+
+				
+				
+				
+				
+				// Instantiate a counter
+				clock = new FlipClock($('.clock'), 10, {
+					clockFace: 'Counter',
+					//autoStart: true,
+					countdown: true
+				});
+				
+			
+				// Attach a click event to a button a decrement the clock
+				$('.start').click(function() {
+					var timer = new FlipClock.Timer(clock, {
+					callbacks: {
+						interval: function() {
+							clock.decrement();
+							
+						}
+					}
+				});
+						
+				timer.start();
+				
+				//function play_song() {
+            //console.log("ok");
+            //document.getElementById('audiotag2').play();
+        //}	
+					//setTimeout(play_song, 0);	
+					
+					
+			//function play_single_sound() {
+            //console.log("ok");
+            //document.getElementById('audiotag2').pause();
+				//document.getElementById('audiotag1').play();
+				
+        //}
+        //setTimeout(play_single_sound, 130500);
+					
+					
+				});
+					
+				
+				$('.reset').click(function() {
+					clock.reset();
+				
+					window.location.reload();
+					
+					
+				});
+				
+				
+			});
+				
+	</script>	
+
+-->
+
+
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--Flipclock javascript-->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.7/js/mdb.min.js"></script>
+<!--main javascript-->
+<script type="text/javascript" src="js/main.js"></script>
+  <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+  </script>
+</body>
+</html>
